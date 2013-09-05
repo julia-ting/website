@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Jacques+Francois' rel='stylesheet' type='text/css'>
+    <link href="/stylesheets/home.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <title> Julia Ting </title>
+  </head>
+
+  <body>
+    <div id="outer">
+        <div id="inner">
+          <div class="nav-display">&nbsp;</div>
+
+          <div class="name">
+            <a class="linkJ" href="/blog">
+              <img id="J" src="images/J.jpg" alt="julia" class="letter"
+              onmouseover="this.src='/images/hoverJ.jpg'" 
+              onmouseout="this.src='/images/J.jpg'" />
+            </a>
+            <a class="linkU" href="/ultimate">
+              <img id="U" src="images/U.jpg" alt="ultimate" class="letter"
+              onmouseover="this.src='/images/hoverU.jpg'" 
+              onmouseout="this.src='/images/U.jpg'" />
+            </a>
+            <a class="linkL" href="/lolidunno">
+              <img id="L" src="images/L.jpg" alt="looking" class="letter"
+              onmouseover="this.src='/images/hoverL.jpg'" 
+              onmouseout="this.src='/images/L.jpg'" />
+            </a>
+            <a class="linkI" href="/inquire">
+              <img id="I" src="images/I.jpg" alt="inquire" class="letter"
+              onmouseover="this.src='/images/hoverI.jpg'" 
+              onmouseout="this.src='/images/I.jpg'" />
+            </a>
+            <a class="linkA" href="/about">
+              <img id="A" src="images/A.jpg" alt="about" class="letter"
+              onmouseover="this.src='/images/hoverA.jpg'" 
+              onmouseout="this.src='/images/A.jpg'" />
+            </a>
+            <img id="space" src="images/space.jpg" alt="blank">
+            <a class="linkT" href="/terminal">
+              <img id="T" src="images/T.jpg" alt="terminal" class="letter"
+              onmouseover="this.src='/images/hoverT.jpg'" 
+              onmouseout="this.src='/images/T.jpg'" />
+            </a>
+            <a class="linkI2" href="/inspect">
+              <img id="I2" src="images/I2.jpg" alt="inspect" class="letter"
+              onmouseover="this.src='/images/hoverI2.jpg'" 
+              onmouseout="this.src='/images/I2.jpg'" />
+            </a>
+            <a class="linkN" href="/notebook">
+              <img id="N" src="images/N.jpg" alt="notebook" class="letter"
+              onmouseover="this.src='/images/hoverN.jpg'" 
+              onmouseout="this.src='/images/N.jpg'" />
+            </a>
+            <a class="linkG" href="/greatness">
+              <img id="G" src="images/G.jpg" alt="gallery" class="letter" 
+              onmouseover="this.src='/images/hoverG.jpg'" 
+              onmouseout="this.src='/images/G.jpg'" />
+            </a>
+          </div>
+        </div>
+    </div>
+
+    <script>
+      $(".letter").hover(
+        function() {
+          $(".nav-display").text($(this).attr('alt'));
+        },
+        function() {
+          $(".nav-display").html('&nbsp');
+        });
+      </script>
+  </body>
+
+</html>
+

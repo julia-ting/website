@@ -1,0 +1,33 @@
+application: iceotter
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /pages
+  script: juliating.application
+
+- url: /
+  upload: staticPages/index.html
+  static_files: staticPages/index.html
+
+- url: /images
+  static_dir: images
+- url: /images/headers
+  static_dir: images/headers
+
+- url: /stylesheets
+  static_dir: stylesheets
+
+#- url: /about
+#  upload: staticPages/about.html
+#  static_files: staticPages/about.html
+
+- url: /inquire
+  upload: staticPages/contact.html
+  static_files: staticPages/contact.html
+
+- url: /.*
+  upload: staticPages/construction.html
+  static_files: staticPages/construction.html
