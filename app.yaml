@@ -28,6 +28,30 @@ handlers:
   upload: staticPages/contact.html
   static_files: staticPages/contact.html
 
+- url: /ultimate
+  upload: staticPages/ultimate.html
+  static_files: staticPages/ultimate.html
+
+- url: /log
+  upload: staticPages/log.html
+  static_files: staticPages/log.html
+
+- url: /terminal
+  upload: staticPages/terminal.html
+  static_files: staticPages/terminal.html
+
+- url: /inspect
+  upload: staticPages/resume.html
+  static_files: staticPages/resume.html
+
+- url: /notebook
+  upload: staticPages/notebook.html
+  static_files: staticPages/notebook.html
+
+- url: /gallery
+  upload: staticPages/gallery.html
+  static_files: staticPages/gallery.html
+
 - url: /.*
-  upload: staticPages/construction.html
-  static_files: staticPages/construction.html
+  upload: staticPages/index.html
+  static_files: staticPages/index.html
