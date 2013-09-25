@@ -20,9 +20,9 @@ handlers:
 - url: /stylesheets
   static_dir: stylesheets
 
-#- url: /about
-#  upload: staticPages/about.html
-#  static_files: staticPages/about.html
+- url: /about
+  upload: staticPages/about.html
+  static_files: staticPages/about.html
 
 - url: /inquire
   upload: staticPages/contact.html

@@ -1,3 +1,7 @@
+/****************************************
+ * Formatting for ALL normal content pages
+ *****************************************/
+
 html {
   color: #3B3C36;
   height: 90%;
@@ -42,11 +46,8 @@ body {
 }
 
 #page-content {
-  position: absolute;
-  top: 50%;
   height: 12em;
   text-align: center;
-  left: 25%;
   margin-top: 2em;
   font-size: 35px;
   font-family: 'Palatino', serif;
@@ -58,6 +59,20 @@ body {
   background: #3B3C36;
 }
 
+a {
+  text-decoration: none;
+  color: #3B3C36;
+}
 
+
+/****************************************
+ * Formatting for ABOUT page 
+ *****************************************/
+
+a.icon:hover {
+  position: relative;
+  bottom: 5px;
+  color: #996699;
+}
 
 
