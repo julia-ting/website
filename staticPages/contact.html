@@ -3,16 +3,70 @@
   <head>
     <link href='http://fonts.googleapis.com/css?family=Jacques+Francois' rel='stylesheet' type='text/css'>
     <link href='/stylesheets/general.css' rel='stylesheet' type='text/css' />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <title>Contact</title>
   </head>
   <body>
+    <!--- BEGIN NAVIGATION BAR -->
     <div id="nav">
-      <div id="previous"><img src="images/navigation/left.png" alt="previous"> </div>
-      <div id="next"> <img src="images/navigation/right.png" alt="next"></div>
-      <div id="name"> <img src="images/navigation/babyname.png" alt="baby"> </div>
+      <div class="previous">
+        <img src="images/navigation/left.png" alt="previous">
+      </div>
+      <div class="nav-prev-text"> &nbsp; </div>
+      <div class="nav-next-text"> &nbsp;</div>
+      <div class="next"> <img src="images/navigation/right.png" alt="next"></div>
+      <div id="name">
+        <a href="/blog">
+          <img class="letter-left" src="images/navigation/J.png" alt="julia"
+            onmouseover="this.src='/images/navigation/Jhover.png'"
+            onmouseout="this.src='/images/navigation/J.png'" />
+          </a>
+          <a href="/ultimate">
+        <img class="letter-left" src="images/navigation/U.png" alt="ultimate"
+            onmouseover="this.src='/images/navigation/Uhover.png'"
+            onmouseout="this.src='/images/navigation/U.png'" />
+          </a>
+          <a href="/lolidunno">
+        <img class="letter-left" src="images/navigation/L.png" alt="look"
+            onmouseover="this.src='/images/navigation/Lhover.png'"
+            onmouseout="this.src='/images/navigation/L.png'" />
+          </a>
+          <!--          <a href="/inquire"> -->
+        <img class="letter" src="images/navigation/I1hover.png" alt="inquire"
+            onmouseover="this.src='/images/navigation/I1hover.png'"
+            onmouseout="this.src='/images/navigation/I1hover.png'" />
+            <!--</a> -->
+          <a href="/about">
+        <img class="letter-right" src="images/navigation/A.png" alt="about"
+            onmouseover="this.src='/images/navigation/Ahover.png'"
+            onmouseout="this.src='/images/navigation/A.png'" />
+          </a>
+        <img src="images/navigation/space.png" alt="whee">
+          <a href="/terminal">
+        <img class="letter-right" src="images/navigation/T.png" alt="terminal"
+            onmouseover="this.src='/images/navigation/Thover.png'"
+            onmouseout="this.src='/images/navigation/T.png'" />
+          </a>
+          <a href="/inspect">
+        <img class="letter-right" src="images/navigation/I2.png" alt="inspect"
+            onmouseover="this.src='/images/navigation/I2hover.png'"
+            onmouseout="this.src='/images/navigation/I2.png'" />
+          </a>
+          <a href="/notebook">
+        <img class="letter-right" src="images/navigation/N.png" alt="notebook"
+            onmouseover="this.src='/images/navigation/Nhover.png'"
+            onmouseout="this.src='/images/navigation/N.png'" />
+          </a>
+          <a href="/gallery">
+        <img class="letter-right" src="images/navigation/G.png" alt="gallery"
+            onmouseover="this.src='/images/navigation/Ghover.png'"
+            onmouseout="this.src='/images/navigation/G.png'" />
+          </a>
+      </div>
     </div>
 
     <div class="line-separator"></div>
+    <!-- END NAVIGATION BAR -->
     <div id="container">
       <div id='page-name'>
         contact
@@ -37,6 +91,22 @@
           </a>
       </div>
     </div>
+    <script>
+      $(".letter-left").hover(
+        function() {
+          $(".nav-prev-text").text($(this).attr('alt'));
+        },
+        function() {
+          $(".nav-prev-text").html('&nbsp');
+        });
+      $(".letter-right").hover(
+        function() {
+          $(".nav-next-text").text($(this).attr('alt'));
+        },
+        function() {
+          $(".nav-next-text").html('&nbsp');
+        });
+      </script>
   </body>
 </html>
 
